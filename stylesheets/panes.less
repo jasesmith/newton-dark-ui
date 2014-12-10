@@ -17,7 +17,8 @@ atom-pane-container {
             background-color: @app-background-color;
         }
         .item-views {
-            box-shadow: -1px 0 0 0 fade(@app-background-color, 5%);
+            box-shadow: -1px 0 0 0 @app-background-color;
+            z-index: 2;
             &:not(:empty):after {
                 content: 'Open Files';
                 color: @ui-site-color-2;
