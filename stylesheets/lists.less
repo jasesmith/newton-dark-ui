@@ -24,12 +24,14 @@
   .generate-list-item-status-color(@color, @status) {
     li:not(.list-nested-item).status-@{status},
     li.list-nested-item.status-@{status} > .list-item {
-      color: @color;
+        color: @color;
+        box-shadow: -.5em 0 0 0 @color inset, -.6em 0 0 0 #333 inset;
     }
 
     li:not(.list-nested-item).selected.status-@{status},
     li.list-nested-item.selected.status-@{status} > .list-item {
-      color: @color;
+        color: @color;
+        box-shadow: -.5em 0 0 0 @color inset, -.6em 0 0 0 #333 inset;
     }
   }
 

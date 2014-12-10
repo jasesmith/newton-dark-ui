@@ -9,21 +9,35 @@
 }
 
 atom-pane-container {
-  atom-pane {
-    background-color: lighten(@app-background-color, 4%);
-
-    &:focus {
-      background-color: @app-background-color;
+    atom-pane {
+        background-color: lighten(@app-background-color, 4%);
+        -webkit-flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        &:focus {
+            background-color: @app-background-color;
+        }
+        .item-views {
+            box-shadow: -1px 0 0 0 fade(@app-background-color, 5%);
+            &:not(:empty):after {
+                content: 'Open Files';
+                color: @ui-site-color-2;
+                padding: 8px 10px;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 100%;
+                white-space: nowrap;
+            }
+        }
     }
-  }
 
-  atom-pane-axis.horizontal > * {
-    border-right: 1px solid @pane-item-border-color;
-    &:last-child { border-right: none; }
-  }
+    atom-pane-axis.horizontal > * {
+        border-right: 1px solid @pane-item-border-color;
+        &:last-child { border-right: none; }
+    }
 
-  atom-pane-axis.vertical > * {
-    border-bottom: 1px solid @pane-item-border-color;
-    &:last-child { border-bottom: none; }
-  }
+    atom-pane-axis.vertical > * {
+        border-bottom: 1px solid @pane-item-border-color;
+        &:last-child { border-bottom: none; }
+    }
 }
