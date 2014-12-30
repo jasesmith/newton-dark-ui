@@ -10,14 +10,14 @@
 
 atom-pane-container {
     atom-pane {
-        background-color: lighten(@app-background-color, 5%);
+        background-color: @tool-panel-background-color;
         -webkit-flex-direction: row;
         -webkit-flex-wrap: wrap;
         &:focus {
             background-color: @app-background-color;
         }
         .item-views {
-            box-shadow: -1px 0 0 0 @app-background-color;
+            box-shadow: 0 0 0 .1em @tab-border-color;
             z-index: 2;
             &:not(:empty):after {
                 content: 'Open Files';
