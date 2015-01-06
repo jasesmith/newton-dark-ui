@@ -8,9 +8,8 @@ _UI Themes_ drop-down menu.
 
 ![Newton Dark UI](http://jasesmith.github.io/newton-dark-ui/newton-dark-ui.png)
 
-Use the Newton Dark Syntax syntax theme for more newtonian goodness.
-
-![Newton Dark  Syntax](http://jasesmith.github.io/newton-dark-ui/newton-dark-syntax.png)
+Use the [Newton Dark Syntax](https://atom.io/themes/newton-dark-syntax) _syntax theme_ for more newtonian goodness.
+[![Newton Dark  Syntax](http://jasesmith.github.io/newton-dark-ui/newton-dark-syntax.png)](https://atom.io/themes/newton-dark-syntax)
 
 ---
 
