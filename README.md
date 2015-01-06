@@ -1,4 +1,4 @@
-# Newton Dark UI theme
+# Newton Dark UI _Theme_
 
 Another dark UI theme for Atom.
 
