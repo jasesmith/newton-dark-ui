@@ -52,7 +52,7 @@
   li.two-lines {
     .secondary-line { color: @text-color-subtle; }
     &.selected .secondary-line {
-      color: @text-color;
+      color: fadein(@text-color-highlight, 60%);
       text-shadow: none;
     }
   }
@@ -86,7 +86,7 @@
       .octicon(check, @active-icon-size);
       &:before {
         margin-right: @component-icon-padding;
-        color: @text-color-success;
+        color: @text-color-highlight;
       }
     }
   }
