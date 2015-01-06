@@ -11,3 +11,10 @@ _UI Themes_ drop-down menu.
 Use the Newton Dark Syntax syntax theme for more newtonian goodness.
 
 ![Newton Dark  Syntax](http://jasesmith.github.io/newton-dark-ui/newton-dark-syntax.png)
+
+---
+
+### Recommended Packages
+* [Highlight Line](https://atom.io/packages/highlight-line)
+* [Atom Color Highlight](https://atom.io/packages/atom-color-highlight)
+* [File Icons](https://atom.io/packages/file-icons)
