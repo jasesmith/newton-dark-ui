@@ -14,6 +14,8 @@ Use the [Newton Dark Syntax](https://atom.io/themes/newton-dark-syntax) _syntax 
 ---
 
 ### Recommended Packages
+* [Git Tab Status](https://atom.io/packages/git-tab-status)
 * [Highlight Line](https://atom.io/packages/highlight-line)
 * [Atom Color Highlight](https://atom.io/packages/atom-color-highlight)
+* [Project Pallete Finder](https://atom.io/packages/project-palette-finder)
 * [File Icons](https://atom.io/packages/file-icons)
