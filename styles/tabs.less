@@ -20,12 +20,22 @@
     overflow-x: hidden;
     overflow-y: auto;
     z-index: 1;
+    resize: horizontal;
     &:not(:empty) {
         min-width: 14em;
     }
-    // &::-webkit-scrollbar {
-    //     display: none;
-    // }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: 0 solid @ui-site-color-2;
+        border-width: .65em;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        z-index: 3;
+        cursor: col-resize;
+    }
 
     .tab {
         position: relative;
