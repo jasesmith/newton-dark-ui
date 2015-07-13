@@ -20,8 +20,10 @@
     z-index: 1;
     resize: horizontal;
     &:not(:empty) {
-        width: 14em;
         min-width: 7em;
+        &:not([style]) {
+            min-width: 14em;
+        }
     }
     .tab {
         position: relative;
