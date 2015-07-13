@@ -19,28 +19,30 @@ atom-pane-container {
         .item-views {
             box-shadow: 0 0 0 .1em @tab-border-color;
             z-index: 2;
-            &:not(:empty):before {
-                content: 'Open Files';
-                color: @ui-site-color-2;
-                padding: 8px 10px;
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 100%;
-                white-space: nowrap;
-            }
-            &:after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                right: 100%;
-                margin-right: 1px;
-                border: .8em solid currentColor;
-                border-top-color: transparent;
-                border-left-color: transparent;
-                z-index: 3;
-                pointer-events: none;
-                color: @ui-site-color-3;
+            &:not(:empty) {
+                &:before {
+                    content: 'Open Files';
+                    color: @ui-site-color-2;
+                    padding: 8px 10px;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 100%;
+                    white-space: nowrap;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 100%;
+                    margin-right: 1px;
+                    border: .8em solid currentColor;
+                    border-top-color: transparent;
+                    border-left-color: transparent;
+                    z-index: 3;
+                    pointer-events: none;
+                    color: @ui-site-color-3;
+                }
             }
         }
     }

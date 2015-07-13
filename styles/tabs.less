@@ -10,8 +10,8 @@
 
 .tab-bar {
     height: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
+    width: 0;
+    overflow: auto;
     -webkit-flex-direction: column;
     padding: 0;
     margin-top: 36px;
@@ -20,13 +20,14 @@
     z-index: 1;
     resize: horizontal;
     &:not(:empty) {
-        min-width: 14em;
+        min-width: 7em;
     }
     .tab {
         position: relative;
         top: 0;
         max-width: none;
         height: auto;
+        width: 100%;
         line-height: @tab-height;
         padding: 0;
         margin: 0;
@@ -97,46 +98,44 @@
                 }
             }
         }
-    }
+        &.active {
+            -webkit-flex: 0 0 auto;
+            width: auto;
+            z-index: 2;
+            color: @text-color-highlight;
+            box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
 
-    .tab.active {
-        -webkit-flex: 0 0 auto;
-        width: auto;
-        z-index: 2;
-        color: @text-color-highlight;
-        box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
-
-        .title {
-            background: @ui-site-color-2;
-            padding-right: 40px;
-            + .close-icon,
-            &:hover + .close-icon {
+            .title {
+                background: @ui-site-color-2;
+                padding-right: 40px;
+                + .close-icon,
+                &:hover + .close-icon {
+                    color: mix(#000, @ui-site-color-2);
+                }
+                &:before {
+                    color: currentColor !important;
+                    font-weight: 800;
+                }
+            }
+            &:hover .close-icon {
                 color: mix(#000, @ui-site-color-2);
-            }
-            &:before {
-                color: currentColor !important;
-                font-weight: 800;
+
+                &:hover {
+                    color: inherit;
+                }
             }
         }
     }
 
-    .tab.active:hover .close-icon {
-        color: mix(#000, @ui-site-color-2);
-
-        &:hover {
-            color: inherit;
+    .placeholder {
+        position: relative;
+        pointer-events: none;
+        height: 1px;
+        width: auto;
+        margin: 0;
+        box-shadow: none;
+        &:after {
+            display: none;
         }
     }
-
-  .placeholder {
-      position: relative;
-      pointer-events: none;
-      height: 1px;
-      width: auto;
-      margin: 0;
-      box-shadow: none;
-      &:after {
-          display: none;
-      }
-  }
 }
