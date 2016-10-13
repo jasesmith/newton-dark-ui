@@ -17,7 +17,7 @@ atom-pane-container {
             background-color: @app-background-color;
         }
         .item-views {
-            box-shadow: 0 0 0 .1em @tab-border-color;
+            box-shadow: -0.1em 0 0 0 @pane-item-shadow-color, 0.1em 0 0 0 @pane-item-shadow-color;
             z-index: 2;
             &:not(:empty) {
                 &:before {
@@ -55,5 +55,9 @@ atom-pane-container {
     atom-pane-axis.vertical > * {
         border-bottom: 1px solid @pane-item-border-color;
         &:last-child { border-bottom: none; }
+    }
+
+    &.footer {
+      box-shadow: 0 -0.1em 0 0 @pane-item-shadow-color;
     }
 }
