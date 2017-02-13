@@ -1,7 +1,7 @@
 {
   "name": "newton-dark-ui",
   "theme": "ui",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Another dark theme for interface components, but with vertical 'open file' tabs!",
   "license": "MIT",
   "repository": "https://github.com/jasesmith/newton-dark-ui",
