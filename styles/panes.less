@@ -45,16 +45,29 @@ atom-pane-container {
                 }
             }
         }
+        .tab-bar:empty {
+            display: none;
+            + .item-views::before,
+            + .item-views::after {
+                display: none;
+            }
+        }
     }
 
-    atom-pane-axis.horizontal > * {
-        border-right: 1px solid @pane-item-border-color;
-        &:last-child { border-right: none; }
-    }
+    atom-pane-axis {
+        &.horizontal > * {
+            border-right: 1px solid @pane-item-border-color;
+            &:last-child { border-right: none; }
+        }
 
-    atom-pane-axis.vertical > * {
-        border-bottom: 1px solid @pane-item-border-color;
-        &:last-child { border-bottom: none; }
+        &.vertical > * {
+            border-bottom: 1px solid @pane-item-border-color;
+            &:last-child { border-bottom: none; }
+        }
+        > atom-pane-resize-handle {
+            background: @ui-site-color-2;
+            padding: 1px;
+        }
     }
 
     &.footer {
